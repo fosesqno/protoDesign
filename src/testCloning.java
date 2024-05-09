@@ -1,5 +1,7 @@
 package src;
-
+// Andrew Walter, 5/9/24
+// This class, the testCloning class, does basic implementation of the two base classes in the project.
+// It runs a clone on each, prints them, and prints their hashcodes to prove the objects are unique.
 public class testCloning {
     public static void main(String[] args){
         CloneFactory animalMaker = new CloneFactory();
