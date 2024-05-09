@@ -9,5 +9,12 @@ public class testCloning {
         System.out.println(clonedSally);
         System.out.println("Sally hashcode: " + System.identityHashCode(sally));
         System.out.println("Clone hashcode: " + System.identityHashCode(clonedSally));
+
+        Mouse charles = new Mouse();
+        Mouse charlesII = (Mouse) animalMaker.getClone(charles);
+        System.out.println(charles);
+        System.out.println(charlesII);
+        System.out.println("Charles hashcode: " + System.identityHashCode(charles));
+        System.out.println("Charles the Second hashcode: " + System.identityHashCode(charlesII));
     }
 }
